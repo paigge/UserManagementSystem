@@ -4,6 +4,7 @@ using System.Collections.Generic;
 class UserManager
 {
     private List<string> _users = new List<string>();
+    private int _count;
 
     public void AddUser(string name)
     {
