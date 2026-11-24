@@ -4,11 +4,18 @@ using System.Collections.Generic;
 class UserManager
 {
     private List<string> _users = new List<string>();
+    private int _removedCount;
     private int _count;
 
     public void AddUser(string name)
     {
         _users.Add(name);
+    }
+
+    public void RemoveUser(string name)
+    {
+        _users.Remove(name);
+        _removedCount++;
     }
 
     public void ShowUsers()
