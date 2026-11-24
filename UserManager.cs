@@ -10,6 +10,11 @@ class UserManager
         _users.Add(name);
     }
 
+    public void RemoveUser(string name)
+    {
+        _users.Remove(name);
+    }
+
     public void ShowUsers()
     {
         foreach (string user in _users)

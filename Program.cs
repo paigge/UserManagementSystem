@@ -7,6 +7,7 @@ class Program
         UserManager manager = new UserManager();
         manager.AddUser("Анна");
         manager.AddUser("Иван");
+        manager.RemoveUser("Анна");
         manager.ShowUsers();
     }
 }
